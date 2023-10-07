@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        background-color: darkslategrey;
+    }
+
+    h1 {
+        color: skyblue;
+    }
+
+    h5{
+        color: skyblue;
+        background-color: darkslategrey;
+    }
+
+    input[type="submit"]{
+        background-color: blue;
+        color: white;
+        margin: 4px;
+        padding: 10px;
+    }
+
+    footer{
+        position: sticky;
+    }
+
+</style>
+</head>
+
+<!--##NO predefine-->
+<body>
+    <center>
+    <h1> Advanced Calculator </h1> <br>
+    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPArwWe0AdZ04RTcRPMCQ9VcLXuplt7ZQhhIYhr0E1Rf-cJTOI> <br> <br>
+
+    <form method="POST">
+        <label> Enter Expression: </label>
+        <br>
+        <select name='operation' aria-label='operationDropdown' class="is-focused is-large">
+            <option> CHOOSE OPTION </option>
+            <option value=simplify> Simplify </option>
+            <option value=factor> Factor </option>
+        </select>  
+        <input type="text">
+        <input type="submit">
+    </form>
+    <p>Your equation is {{equation}} = {{ result }}</p> <br> <br> <br>
+
+</body>
+</html>
